@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "trim": true,
+      "minLength": 1
+    }
+  },
+  "required": ["text"],
+  "additionalProperties": false
+}

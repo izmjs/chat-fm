@@ -1,0 +1,12 @@
+{
+  "INSUFFICIENT_NUMBER_OF_USERS": "Add at least one participant",
+  "CHANNEL_NOT_FOUND": "The specified channel does not exist",
+  "CHANNEL_INVALID_ID": "The specified ID is invalid",
+  "EMPTY_RECIPIENTS": "List of recipients is empty",
+  "NOT_MINE": "You can not remove/edit messages that are not yours",
+  "CHANNEL_CANNOT_ADMINISTRATE": "You can not administrate this channel",
+  "CHANNEL_CANNOT_LEAVE": "You can not leave this channel",
+  "CHANNEL_UNAUTHORIZED_ACTION": "You do not have enaugh permissions to perform this action",
+  "MESSAGE_NOT_FOUND": "The specified message was not found",
+  "UNAUTHORIZED_GUEST_MULTIPLE_RECEIVERS": "A Guest is not authorized to send to multiple users"
+}

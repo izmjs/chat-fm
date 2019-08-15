@@ -1,0 +1,50 @@
+{
+  "name": "chat-fm",
+  "version": "0.1.0",
+  "license": "ISC",
+  "scripts": {
+    "test": "node ../../scripts/run-tests chat-fm",
+    "lint": "eslint .",
+    "format:write": "prettier **/*.{json,md} --write",
+    "format:test": "prettier **/*.{json,md} --list-different",
+    "release:major": "release-it major",
+    "release:minor": "release-it minor",
+    "release:patch": "release-it patch"
+  },
+  "description": "The chat-fm module",
+  "keywords": [
+    "chat-fm",
+    "boilerplate-fm",
+    "functional-module"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "release-it": "^12.3.4",
+    "socket.io-client": "^2.2.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "post-merge": "npm i",
+      "pre-commit": "lint-staged && npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

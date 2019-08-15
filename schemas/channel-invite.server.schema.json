@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "properties": {
+      "user": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{24}$"
+      },
+      "isAdmin": {
+        "type": "boolean"
+      }
+    },
+    "required": ["user"],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "INSUFFICIENT_NUMBER_OF_USERS": "Nombre insuffisant de participants",
+  "CHANNEL_NOT_FOUND": "Le canal spécifié est introuvable",
+  "CHANNEL_INVALID_ID": "L'ID spécifié est invalide",
+  "EMPTY_RECIPIENTS": "La liste des destinataires est vide",
+  "NOT_MINE": "Vous ne pouvez pas modifier/supprimer les messages des autres utilisateurs",
+  "CHANNEL_CANNOT_ADMINISTRATE": "Vous n'avez pas le droit d'administrer ce canal",
+  "CHANNEL_CANNOT_LEAVE": "Vous ne pouvez pas quitter ce canal",
+  "CHANNEL_UNAUTHORIZED_ACTION": "Vous n'avez pas suffisamment de droits pour effectuer cette action",
+  "MESSAGE_NOT_FOUND": "Le message specifié est introuvable",
+  "UNAUTHORIZED_GUEST_MULTIPLE_RECEIVERS": "Un utilisateur non authentfié ne peut pas envoyer un message à multiples personnes"
+}

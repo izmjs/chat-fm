@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "trim": true,
+      "minLength": 1
+    },
+    "to": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{24}$"
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["text", "to"],
+  "additionalProperties": false
+}

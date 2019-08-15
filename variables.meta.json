@@ -1,0 +1,36 @@
+{
+  "ADD_IAM_TO_USER": {
+    "name": "Add the IAM to 'user' Role",
+    "defaultValue": true,
+    "scope": "chat-fm",
+    "schema": {
+      "type": "boolean"
+    }
+  },
+  "REMOVE_MESSAGES": {
+    "name": "Remove messages instead of marking them as removed",
+    "defaultValue": true,
+    "scope": "chat-fm",
+    "schema": {
+      "type": "boolean"
+    }
+  },
+  "ENABLE_VERSIONNING": {
+    "name": "Enable the versioning",
+    "description": "Keep track of modified text messages",
+    "defaultValue": true,
+    "scope": "chat-fm",
+    "schema": {
+      "type": "boolean"
+    }
+  },
+  "NB_MESSAGE_VERSIONS": {
+    "name": "Number of message versions to keep",
+    "description": "Put a negatif integer to save all versions",
+    "defaultValue": 10,
+    "scope": "chat-fm",
+    "schema": {
+      "type": "integer"
+    }
+  }
+}
