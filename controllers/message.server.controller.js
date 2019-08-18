@@ -84,7 +84,7 @@ exports.createChannel = async function createChannel(req, res, next) {
       channel = new ChatChannel({
         type: body.to.length === 1 ? 'p2p' : 'private',
         owner: user,
-        users: body.to.map(u => ({ user: u, isAdmin: false })),
+        users: body.to.map((u) => ({ user: u, isAdmin: false })),
       });
 
       channel = await channel.save({ new: true });

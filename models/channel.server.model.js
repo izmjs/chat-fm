@@ -242,7 +242,7 @@ ChannelSchema.methods.getPreview = async function getPreview(user) {
           && u.user.name
           && u.user.name.first;
       })
-      .slice(0, 3).map(u => u.user.name.first);
+      .slice(0, 3).map((u) => u.user.name.first);
 
     const nbUsers = found ? this.users.length - 1 : this.users.length;
     name = users.join(' & ') + (
@@ -316,7 +316,7 @@ ChannelSchema.pre('save', function preSave() {
  */
 ChannelSchema.post('remove', function postRemove() {
   const ChatMessage = model('ChatMessage');
-  ChatMessage.deleteMany({ channel: this }).catch(e => console.error(e));
+  ChatMessage.deleteMany({ channel: this }).catch((e) => console.error(e));
 });
 
 module.exports = mongoose.model('ChatChannel', ChannelSchema);
