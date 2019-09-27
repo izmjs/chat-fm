@@ -18,16 +18,16 @@
     "functional-module"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
-    "eslint": "^6.2.2",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "eslint": "^6.4.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "husky": "^3.0.4",
-    "lint-staged": "^9.2.4",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.4.0",
     "prettier": "^1.18.2",
-    "release-it": "^12.3.5",
-    "socket.io-client": "^2.2.0"
+    "release-it": "^12.4.1",
+    "socket.io-client": "^2.3.0"
   },
   "commitlint": {
     "extends": [
