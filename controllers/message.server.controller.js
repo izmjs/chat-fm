@@ -157,7 +157,7 @@ exports.send = async function send(req, res, next) {
   if (['public', 'internal'].includes(channel.type)) {
     io.to(`chat-fm:${channel.type}`).emit('chat-fm:message', msg);
   } else {
-    const list = channel.users
+    const list = channel.users.toObject()
       .filter(({ muted = false }) => !muted)
       .map(({ user: theUser }) => getDocKey(theUser));
 
