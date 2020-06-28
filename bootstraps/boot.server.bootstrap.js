@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-unresolved
-const { addIamToRoles } = require('utils');
+const { addIamToRoles } = require('@helpers/utils');
 
 module.exports = async (config) => {
   const { addIamToUser } = config['chat-fm'];

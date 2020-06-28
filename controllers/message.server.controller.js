@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-unresolved
-const { getIO } = require('utils');
+const { getIO } = require('@helpers/utils');
 const { model, Types } = require('mongoose');
 const { resolve } = require('path');
 

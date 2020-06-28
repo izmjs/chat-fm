@@ -1,5 +1,4 @@
-// eslint-disable-next-line
-const { validate } = require('utils');
+const { validate } = require('@helpers/utils');
 
 const ctrls = require('../controllers/message.server.controller');
 const sendSchema = require('../schemas/message-send.server.schema');
