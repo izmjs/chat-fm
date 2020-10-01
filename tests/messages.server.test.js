@@ -146,8 +146,8 @@ describe('tests for module "chat-fm"', () => {
     //   socket.disconnect();
     // }
     await Promise.all([
-      User.remove(),
-      Channel.remove(),
+      User.deleteMany(),
+      Channel.deleteMany(),
     ]);
   });
 });
