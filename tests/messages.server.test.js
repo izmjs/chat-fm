@@ -1,9 +1,7 @@
-/* eslint-disable import/no-dynamic-require */
 const request = require('supertest');
-const { resolve } = require('path');
 const { model, connection } = require('mongoose');
 const { expect } = require('chai');
-// const io = require('socket.io-client');
+
 const {
   it,
   before,
@@ -14,10 +12,10 @@ const {
 const User = model('User');
 const Channel = model('ChatChannel');
 
-const { createUser } = require(resolve('helpers/utils'));
+const { createUser } = require('@helpers/utils');
 
-const express = require(resolve('./config/lib/express'));
-const { prefix } = require(resolve('config'));
+const express = require('@config/lib/express');
+const { prefix } = require('@config/index').app;
 
 let httpServer;
 const c1 = {
